@@ -15,23 +15,29 @@
 }
 
 /* Apply the animation to the divs */
-div:nth-child(odd) {
-  background-color: red;
-  border: 5px solid black;
-  animation: weddingAnimation 3s infinite;
-}
-
-div:nth-child(even) {
-  background-color: black;
-  border: 5px dotted red;
-  animation: weddingAnimation 3s infinite;
-}
-
-/* Additional styling for the divs */
 div {
   padding: 10px;
   margin: 10px;
   color: white;
   text-align: center;
   font-family: 'Comic Sans MS', cursive;
+  background-color: transparent;
+  border: none;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+div:nth-child(odd) {
+  animation: weddingAnimation 3s infinite;
+}
+
+div:nth-child(even) {
+  animation: weddingAnimation 3s infinite;
+}
+
+/* Show divs when scrolled into view */
+div.in-view {
+  transform: translateY(0);
+  opacity: 1;
 }
