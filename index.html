@@ -22,7 +22,7 @@
 }
 
 /* Apply the animation to the divs */
-div {
+div.alert-message {
   padding: 10px;
   margin: 10px;
   color: white;
@@ -34,15 +34,7 @@ div {
   opacity: 0;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
-
-div:nth-child(odd) {
-  animation: weddingAnimation 3s infinite;
-}
-
-div:nth-child(even) {
-  animation: weddingAnimation 3s infinite;
-}
-
+        
 /* Show divs when scrolled into view */
 div.in-view {
   transform: translateY(0);
@@ -69,14 +61,16 @@ div.in-view {
     <div>
        
     </div>
-    <div>
-        <h2>Repetitionsmiddag</h2>
-        <p>Om du planerar att delta i repetitionsmiddagen så kommer mer info 1 november! Du kommer att kunna beställa och betala för din egen mat direkt på restaurangen.</p>
-        <p>Vi ser fram emot att skapa fantastiska minnen tillsammans. Tack för att du är en del av vårt bröllop!</p>
-    </div>
+
     <div>
         <p>Med kärlek och tacksamhet</p>
         <p>Helena och Mattias</p>
+    </div>
+
+    <div class="alert-message">
+        <h2>Repetitionsmiddag</h2>
+        <p>Om du planerar att delta i repetitionsmiddagen så kommer mer info 1 november! Du kommer att kunna beställa och betala för din egen mat direkt på restaurangen.</p>
+        <p>Vi ser fram emot att skapa fantastiska minnen tillsammans. Tack för att du är en del av vårt bröllop!</p>
     </div>
 
     <script>
