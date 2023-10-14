@@ -3,7 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+    /* Define animation keyframes */
+@keyframes weddingAnimation {
+  0% {
+    background-color: red;
+    border: 5px solid black;
+  }
+  50% {
+    background-color: white;
+    border: 5px dashed black;
+  }
+  100% {
+    background-color: black;
+    border: 5px dotted red;
+  }
+}
+
+/* Apply the animation to the divs */
+div {
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive;
+  background-color: transparent;
+  border: none;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+div:nth-child(odd) {
+  animation: weddingAnimation 3s infinite;
+}
+
+div:nth-child(even) {
+  animation: weddingAnimation 3s infinite;
+}
+
+/* Show divs when scrolled into view */
+div.in-view {
+  transform: translateY(0);
+  opacity: 1;
+}
+    </style> 
     <title>Hella Och Mattias Bröllop</title>
 </head>
 <body>
