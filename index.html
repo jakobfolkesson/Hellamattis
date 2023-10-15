@@ -1,110 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-    /* Define animation keyframes */
-@keyframes weddingAnimation {
-  0% {
-    background-color: red;
-    border: 5px solid black;
-  }
-  50% {
-    background-color: white;
-    border: 5px dashed black;
-  }
-  100% {
-    background-color: black;
-    border: 5px dotted red;
-  }
-}
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            background-color: #FDFDFD;
+            color: #243D5A;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            background-image: url('darkbackground.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
 
-/* Apply the animation to the divs */
-div.alert-message {
-  padding: 10px;
-  margin: 10px;
-  color: white;
-  text-align: center;
-  font-family: 'Comic Sans MS', cursive;
-  background-color: transparent;
-  border: none;
-  transform: translateY(50px);
-  opacity: 0;
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
+        .container {
+            max-width: 900px;
+            margin: 70px auto;
+            padding: 30px;
+            background-color: #F8F8F8;  
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        }
 
-div.alert-message {
-  animation: weddingAnimation 3s infinite;
-}
-        
-/* Show divs when scrolled into view */
-div.in-view {
-  transform: translateY(0);
-  opacity: 1;
-}
-    </style> 
+        p {
+            color: #243D5A;
+        }
+
+        .segment {
+            border-bottom: 1px solid #E0E0E0;
+            padding: 20px 0;
+        }
+
+        .segment:last-child {
+            border-bottom: none;
+        }
+
+        .segment.welcome .couple-pictures {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .couple-pictures img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .couple-pictures img:hover {
+            transform: scale(1.05);
+        }
+
+
+        /* Media Query for Mobile devices */
+        @media (max-width: 768px) {
+            .segment.welcome .couple-pictures {
+                grid-template-columns: 1fr; /* Make images stack vertically */
+                gap: 90px; /* Adjust gap as needed for mobile layout */
+            }
+        }
+
+
+    </style>
     <title>Hella Och Mattias Bröllop</title>
 </head>
+
 <body>
-
-    <div>
-        <h1>Välkommen till Helena och Mattias bröllop!</h1>
-        <p>Vi är så glada att du kommer att fira denna speciella dagen med oss. Nedan hittar du all information du behöver för att göra din närvaro så bekväm och trevlig som möjligt.</p>
-    </div>
-    <div>
-        
-    </div>
-        <h2>Inbjudningskod: HellaOchMattiasBröllop</h2>
-        <p>Om du ringer för att boka bord på restaurangen, använd gärna koden "HellaOchMattiasBröllop" för att få den speciella bröllopsbehandlingen.</p>
-    <div>
-        <h2>Klädsel och Skor</h2>
-        <p>Vi kommer att hålla vår bröllopsfest utomhus, så var vänlig klä dig varmt. Och för damerna, se till att ha bekväma skor på dig, vi vet alla vad det handlar om (am I right?).</p>
-    </div>
-    <div>
-       
-    </div>
-
-    <div>
-        <p>Med kärlek och tacksamhet</p>
-        <p>Helena och Mattias</p>
-    </div>
-
-    <div class="alert-message">
-        <h2>Repetitionsmiddag</h2>
-        <p>Om du planerar att delta i repetitionsmiddagen så kommer mer info 1 november! Du kommer att kunna beställa och betala för din egen mat direkt på restaurangen.</p>
-        <p>Vi ser fram emot att skapa fantastiska minnen tillsammans. Tack för att du är en del av vårt bröllop!</p>
-    </div>
-
-    <script>
-  // Function to check if an element is in the viewport
-  function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-
-  // Function to handle scroll event
-  function handleScroll() {
-    const divs = document.querySelectorAll('div');
-    divs.forEach((div) => {
-      if (isElementInViewport(div)) {
-        div.classList.add('in-view');
-      }
-    });
-  }
-
-  // Add scroll event listener
-  window.addEventListener('scroll', handleScroll);
-
-  // Initial check on page load
-  handleScroll();
-</script>
-
+    <div class="container">
+        <div class="segment welcome">
+            <div class="couple-pictures">
+                <img src="insta-shorter.png" alt="Helena and Mattias Picture 2">
+                <img src="pintrest.png" alt="Helena and Mattias Picture 3">
+                <img src="fb-smogen.png" alt="Helena and Mattias Picture 1">
+            </div>
+        </div>
+   </div>
 </body>
-</html>
