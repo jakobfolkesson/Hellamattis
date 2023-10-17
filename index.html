@@ -1,87 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    
-    <style>
-        body {
-            font-family: 'Josefin Sans', sans-serif;
-            background-color: #FDFDFD;
-            color: #243D5A;
-            margin: 0;
-            padding: 0;
-            line-height: 1.8;
-            background-image: url('darkbackground.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-attachment: fixed;
-        }
+        <style>
+    body {
+        font-family: 'Courier', monospace;
+        background-color: #FDFDFD;
+        color: #2B3A67;
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        background-image: url('darkbackground.png');
+        background-size: cover;
+        background-repeat: repeat;
+        background-attachment: fixed; /* This ensures the background stays fixed during scrolling */
 
-        .container {
-            max-width: 900px;
-            margin: 70px auto;
-            padding: 30px;
-            background-color: #F8F8F8;  
-            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-        }
+    }
 
-        p {
-            color: #243D5A;
-        }
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9); /* Making this slightly transparent to allow the background to peek through */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-        .segment {
-            border-bottom: 1px solid #E0E0E0;
-            padding: 20px 0;
-        }
-
-        .segment:last-child {
-            border-bottom: none;
-        }
-
-        .segment.welcome .couple-pictures {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .couple-pictures img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .couple-pictures img:hover {
-            transform: scale(1.05);
-        }
+    .segment:hover {
+        transform: translateY(-3px);
+        background-color: rgba(255, 224, 230, 0.5); /* Soft Pink with some transparency */
+    }
 
 
-        /* Media Query for Mobile devices */
-        @media (max-width: 768px) {
-            .segment.welcome .couple-pictures {
-                grid-template-columns: 1fr; /* Make images stack vertically */
-                gap: 90px; /* Adjust gap as needed for mobile layout */
-            }
+    /* Highlighting */
+    .segment:nth-child(odd) {
+        background-color: rgba(255, 224, 230, 0.3); /* Softer Pink */
+    }
+
+    .segment.welcome .couple-pictures {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .segment.welcome .couple-pictures img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        object-fit: cover; /* This will ensure the image covers its container without being squished or stretched */
+    }
+
+    /* Highlighting */
+    .alert-message{
+        color: red; /* rgba(255, 224, 239, 0.3); /* Softer Pink */
+    }
+
+		ul {
+            list-style-type: none;
+            padding-left: 20px;
         }
 
 
-    </style>
-    <title>Hella Och Mattias Bröllop</title>
-</head>
+        div > ul > li {
+            margin-bottom: 0px;
+            margin-top: 28px;
+            border-bottom: 0.1rem solid;
+            border-bottom-color: #ffbb00;
+		}
 
-<body>
-    <div class="container">
-        <div class="segment welcome">
-            <div class="couple-pictures">
-                <img src="insta-shorter.png" alt="Helena and Mattias Picture 2">
-                <img src="pintrest.png" alt="Helena and Mattias Picture 3">
-                <img src="fb-smogen.png" alt="Helena and Mattias Picture 1">
+        #vigsel{
+            border-bottom:none;
+        }
+	
+		li {
+			margin-top:17px;	
+		}
+        
+
+        div > ul > ul > li {
+            margin-bottom:0px;
+        }
+
+        div > ul > ul > li:first-child {
+            margin-top: 0px;
+        }
+
+
+
+        div > ul > ul > first-child {
+            margin-top:0px;
+        }
+
+        
+        div > ul > ul > ul > li {
+			margin:0px;
+		}
+
+        .key-word-colored{
+            color:black;
+
+        }
+
+        </style> 
+        <title>Hella Och Mattias Bröllop</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="segment welcome">
+                <h1>Välkommen till Helena och Mattias bröllop!</h1>
+                <p>Vi är så glada att du kommer att fira denna speciella dagen med oss. Nedan hittar du all information du behöver för att göra din närvaro så bekväm och trevlig som möjligt.</p>
+
+                <div class="couple-pictures">
+                    <img src="picture-1.jpg" alt="Helena and Mattias Picture 1">
+                    <img src="picture-2.jpg" alt="Helena and Mattias Picture 2">
+                    <img src="picture-3.jpg" alt="Helena and Mattias Picture 3">
+                </div>
+            </div>
+
+            <div class="segment contacts">
+                <h2>Bokningsdetaljer</h2>
+                <p>Om bokar rum på Hotellet, använd koden: <strong class="key-word-colored">239735</strong>.</p>
+            </div>
+         
+            <div class="segment contacts">
+                <h2>Schema</h2>
+                <ul>
+                    <li><strong>📅 Fredag</strong></li>
+                    <ul>
+                        <li>🔔 Checkin tidigast kl 15</li>
+                        <li>🍽️ kl 19 Rehearsal Dinner</li>
+                        <ul>
+                            <li>🍛 3 rätters</li>
+                            <li>💰 320:- per kuvert</li>
+                            <li>📧 Menyn kommer att mailas ut</li>
+                        </ul>
+                        <li>🎉 Efter Rehearsal Dinner</li>
+                        <ul>
+                            <li>💬🏓🛀 Häng/Spa/Shuffelbord annat kul</li>
+                        </ul>
+                    </ul>
+                    <li><strong>📅 Lördag</strong></li>
+                    <ul>
+                        <li>🍳 Frukost kl 07-10:30</li>
+                        <li>💆 Spa kl 07-11</li>
+                        <li>🍲 Gemensam lunch kl 12</li>
+                        <ul>
+                            <li>💰 Kostnad 115:-</li>
+                        </ul>
+                    </ul>
+                        <li id="vigsel"><strong>💍 Vigsel kl 14:30 </strong></li>
+                    <ul>
+                        <li>🥂 Här bjuds och glatt mingel och bubbel</li>
+                        <li>🥾 Transport till Festlokalen</li>
+                        <ul>
+                            <li>🧥 Utomhus så det är <b>mycket viktigt</b> att ta på sig varma ytterkläder samt <b>rejäla</b> skor</li>
+                        </ul>
+                        <li>🍹 Mottagning med varm dryck på bryggan</li>
+                        <li>🎉 In i festlokalen</li>
+                        <ul>
+                            <li>🍽️ Mat/Dryck</li>
+                            <li>🎵 Musik</li>
+                            <li>💃 Dans</li>
+                        </ul>
+                        <li>🌙 kl 00 börjar vi ta oss tillbaka till hotellet och till efterfesten</li>
+                    </ul>
+                    <li><strong>📅 Söndag</strong></li>
+                    <ul>
+                        <li>🍳 Frukost kl 07-10:30</li>
+                        <li>🔚 checka ut senast kl 11</li>
+                    </ul>
+                </ul>
             </div>
         </div>
-   </div>
+    <div class="container">
+        <div class="segment fun-drink">
+            <p>Vi ser fram emot att skapa fantastiska minnen tillsammans. Tack för att du är en del av vårt bröllop!</p>
+            <p>Helena och Mattias</p>
+        </div>
+    </div>
 </body>
+</html>
