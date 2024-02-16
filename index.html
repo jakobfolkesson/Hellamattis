@@ -114,6 +114,39 @@
             }                                                                                                                                                                                               
         }   
 
+  
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 
         </style> 
         <title>Hella Och Mattias Bröllop</title>
@@ -196,5 +229,147 @@
             <p>Helena och Mattias</p>
         </div>
     </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="largeImg">
+    </div>
+
+    <div class="container">
+        <div class="segment fun-drink">
+            <h1>Bilder</h1>
+            <p>KUL</p>
+            <img src="img/00229_2024-02-10T212230+0100-small.jpg" onclick="showLargeImage(this.src)" />
+            <img src="img/00229_2024-02-10T212151+0100-small.jpg" onclick="showLargeImage(this.src)" />
+            <img src="img/00229_2024-02-10T212214+0100-small.jpg" onclick="showLargeImage(this.src)" />
+            <img src="img/00229_2024-02-10T212230+0100-small.jpg" onclick="showLargeImage(this.src)" />
+            <img src="img/00229_2024-02-10T212242+0100-small.jpg" onclick="showLargeImage(this.src)"/> 
+            <img src="img/00229_2024-02-10T212258+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T212407+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T212455+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T212511+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T215312+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T215515+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T215704+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T215826+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T215847+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T220311+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T220637+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T220831+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T220850+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T220906+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T220935+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T221431+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T221447+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T221511+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T221539+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T221608+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T221637+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T221651+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T221709+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T221740+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T221756+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T222015+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T222109+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T222126+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T222252+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T222318+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T222342+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T222428+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T222500+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T222536+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T222658+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T222720+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T222804+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T223600+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T223618+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T223629+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T223658+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T223736+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T223807+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T224105+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T224124+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T224138+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T224159+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T224259+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T224449+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T224516+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T224722+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T224739+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T224815+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T224831+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T224851+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T225014+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T231155+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T231214+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T231232+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T231247+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T231310+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T231412+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T231656+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T231727+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T231741+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T231804+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T231825+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T231840+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T231933+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T232023+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T232218+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T232235+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T232701+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T235457+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T235515+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T235541+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T235601+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T235645+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T235656+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-10T235720+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-11T002150+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-11T002206+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-11T004828+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-11T004912+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-11T010019+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-11T010134+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-11T011241+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-11T011255+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-11T011924+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-11T011945+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-11T012113+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-11T012131+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-11T012145+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-11T012203+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-11T012230+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-11T012332+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-11T012359+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+            <img src="img/00229_2024-02-11T012633+0100-small.jpg" onclick="showLargeImage(this.src)"/>
+        </div>
+    </div>
+    <script>
+
+      function showLargeImage(src) {
+        // Remove '-small' from the src to get the path of the large image
+        var largeSrc = src.replace("-small", "");
+        // Set the src of the modal image to the large image path
+        document.getElementById("largeImg").src = largeSrc;
+        // Display the modal
+        document.getElementById("myModal").style.display = "block";
+        console.log('doing it' + largeSrc)
+      }
+
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+    </script>
 </body>
 </html>
