@@ -10,3 +10,4 @@ till de som kommer på fredagen den 1 november
 Reharsal kommer att  självkostnadpris
 
 klä er varmt det är långt att gå till festlokalen (SKOR, tjejer vet vad vi snackar om am i right)
+
